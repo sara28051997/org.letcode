@@ -4,6 +4,11 @@
   <artifactId>org.letcode</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <properties>
+     <maven.compiler.source>1.8</maven.compiler.source>
+     <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
+  
   <dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -37,4 +42,18 @@
 			<version>5.0.8</version>
 		</dependency>
 	</dependencies>
+	<build>
+	<plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M7</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+</plugins>
+	</build>
 </project>
