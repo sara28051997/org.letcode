@@ -45,7 +45,7 @@ public class LetCodeTest extends SeleniumbaseClass {
 	public void RunTest(String data[]) throws InterruptedException, IOException
 	{
 		test = extent.createTest("TC01 First Login Test Case");
-		test.assignAuthor("sarathkumar");
+		test.assignAuthor("sarathkumarithyananthan");
 		test.assignCategory("Regression Testing");
 		click(element(Locatorenum.link,"Log in"));
 		test.pass("Loggging In");
